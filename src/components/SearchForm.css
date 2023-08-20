@@ -1,0 +1,134 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("/public/flight-background.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: white;
+}
+
+.container-flight-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: rgba(120, 158, 198, 0.8);
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  width: 70%;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.date-input {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  width: 220px;
+}
+
+.date-input i {
+  margin-right: 5px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  color: white;
+}
+
+.checkbox-label input {
+  margin-right: 5px;
+}
+
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loading {
+  margin: 5px;
+}
+
+.error {
+  margin: 5px;
+  color: red;
+}
+
+.flight-container {
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+.flight-info {
+  margin-bottom: 10px;
+}
+
+.flight-info p {
+  margin: 0;
+}
+
+.flight-info p:first-child {
+  font-weight: bold;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .input-container {
+    flex-direction: column;
+  }
+  
+  .input-container input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .date-input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .date-input {
+    flex-direction: column;
+  }
+}
